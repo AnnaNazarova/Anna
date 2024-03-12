@@ -1,0 +1,137 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 16px;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 32px;
+  }
+}
+
+.header-menu {
+  color: var(--primary-dark-blue);
+  display: flex;
+  margin: 32px 0;
+  gap: 56px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+
+.header__menu-list {
+  display: none;
+
+  @media screen and (min-width: $bp-tablet) {
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    justify-content: center;
+    gap: 64px;
+  }
+}
+
+.header__social {
+  display: flex;
+  gap: 20px;
+  @media screen and (max-width: $bp-mobile) {
+    display: none;
+  }
+}
+
+.header__button {
+  display: none;
+
+  @media screen and (min-width: $bp-desktop) {
+    display: block;
+  }
+}
+
+.header__burger {
+  @media screen and (min-width: $bp-tablet) {
+    display: none;
+  }
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  fill: var(--primary-dark-blue);
+}
+
+.header__link {
+  color: var(--primary-dark-blue);
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  transition: color 0.3s;
+
+  &:hover {
+    color: var(--primary-blue);
+    cursor: pointer;
+  }
+}
+
+
+.hero {
+  &__header {
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 54px;
+      font-weight: 600;
+    }
+    text-transform: capitalize;
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    color: var(--primary-blue);
+    font-size: 114px;
+    max-width: 529px;
+    line-height: 0.8;
+    margin-bottom: 40px;
+  }
+
+  &__promo{
+    background-image: linear-gradient(
+      89deg,
+      #fff 30.62%,
+      rgba(255, 255, 255, 0.85) 41.31%,
+      rgba(255, 255, 255, 0.19) 58.65%,
+      rgba(255, 255, 255, 0) 72.78%
+    ),
+    url(../../img/fon.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+  }
+
+  &__section {
+    padding: 120px 0px;
+  }
+
+
+}
+.hero__callback {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  max-width: 240px;
+  font-size: 12px;
+  color: var(--secondary-graphitic);
+}

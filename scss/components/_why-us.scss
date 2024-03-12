@@ -1,0 +1,33 @@
+.why-us__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 56px;
+}
+
+.why-us__item {
+    gap: 8px;
+    margin: 0 auto;
+    width: 320px;
+}
+
+.why-us__card {
+    padding: 24px 32px;
+    border: 1px solid black;
+    border-radius: 32px;
+    text-align: center;
+    @media screen and (min-width: $bp-tablet) {
+        height: 181px;
+  }
+}
+
+.why-us__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    padding: 0 0 8px;
+    margin: 0 auto;
+    fill: var(--primary-blue);
+}
